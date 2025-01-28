@@ -1,5 +1,36 @@
-# Investigating-the-Dynamics-of-Coupled-Oscillators
+# Investigating the Dynamics of Coupled Oscillators
+
+## General Overview
 This project models and analyzes the dynamics of coupled oscillators under varying boundary conditions (semi-fixed or free ends) using numerical integration. It provides detailed visualizations of the system's behavior across different oscillator configurations, contributing to computational physics studies and wave dynamics research.
+
+## Features
+- Simulates coupled oscillators with varying spring constants and masses.
+- Supports boundary conditions like fixed-end and free-end.
+- Visualizes the behavior of the oscillators, including energy distribution, velocity, and displacement.
+- Provides detailed comparison of normal modes and wave dynamics for different oscillator configurations.
+
+## Requirements
+- Python 3.7 or higher
+- Required libraries:
+  - numpy
+  - matplotlib
+  - scipy
+
+To install the necessary libraries, run:
+pip install -r requirements.txt
+
+## Running the Project
+Clone the repository to your local machine:
+git clone https://github.com/yourusername/projectname.git
+
+Navigate to the project directory:
+cd projectname
+
+Install the required dependencies:
+pip install -r requirements.txt
+
+Run the script:
+python my_script.py
 
 ## Analysis of Dynamics in Oscillator Systems
 
@@ -39,7 +70,5 @@ Where
 
 These formulas are used to understand the wave speed and the dynamics of the system.
 
-
-
-
-
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
