@@ -38,7 +38,7 @@ The program defines the system of coupled harmonic oscillators using the functio
 A list of oscillators, where each oscillator interacts with its neighboring ones via a spring force.
 The differential equations are numerically solved using scipy.integrate.solve_ivp, which integrates the equations of motion for the oscillators over a specified time range.
 
-## Key Parameters
+### Key Parameters
 n: Number of oscillators in the system. The system can simulate various numbers of oscillators, such as 2, 4, 8, 12, etc.
 
 k: Spring constant that determines the strength of the interaction between neighboring oscillators. In the code, it is set to 1.
@@ -51,12 +51,12 @@ True means the ends of the chain are fixed, i.e., the first and last oscillators
 
 False means the ends are free, i.e., all oscillators can move. This parameter is defined in the function call and can be changed to adjust the boundary condition.
 
-## Initial Conditions
+### Initial Conditions
 The initial state of the system is set by the function yStart(n):
 
 Positions: All oscillators start at rest (position 0), except for the last oscillator, which is displaced by 0.3 to initiate the motion. Similarly, if desired, the positions of other oscillators can be set individually, just like the first and last oscillators.
 
-Velocities: All oscillators start with zero velocity (stationary). If needed, the velocities of individual oscillators can also be set, similar to how positions are defined for the first and last oscillators.
+Velocities: The initial condition for velocities sets all oscillators to a stationary state. If desired, individual oscillator velocities can be customized, similar to how positions are defined for the first and last oscillators.
 
 ## Analysis of Dynamics in Oscillator Systems
 
@@ -100,4 +100,5 @@ Where:
 These formulas are used to understand the wave speed and the dynamics of the system.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
