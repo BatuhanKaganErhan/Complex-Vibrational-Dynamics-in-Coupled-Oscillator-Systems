@@ -83,19 +83,19 @@ As the spring constant increases, the springs become stiffer and restrict moveme
 Stiff springs transmit forces between masses more quickly. At a high spring constant, the motion of one mass is immediately transferred to the others, reducing the phase difference between them. This makes the masses more dependent on each other. This behavior arises because the energy in the springs is transmitted in the form of waves, and the speed of these waves depends on the medium. In this case, the spring can be considered as the medium. When relating the wave speed to the dynamics of motion on the spring, the fundamental formula used to determine the wave speed is as follows:
 
 **Wave speed**:  
-$$ v = \sqrt{\frac{T}{\mu}} $$
+v = sqrt(T / μ)
 
 Where:
-- \( v \): Wave speed,
-- \( T \): Spring tension,
-- \( \mu \): Mass density (mass per unit length).
+- **v**: Wave speed,
+- **T**: Spring tension,
+- **μ**: Mass density (mass per unit length).
 
 Additionally, mass density can be calculated as:
-$$ \mu = \frac{m}{L} $$
+μ = m / L
 
 Where:
-- \( m \): Mass of the spring,
-- \( L \): Length of the spring.
+- **m**: Mass of the spring,
+- **L**: Length of the spring.
 
 These formulas are used to understand the wave speed and the dynamics of the system.
 
