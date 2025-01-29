@@ -16,21 +16,41 @@ This project models and analyzes the dynamics of coupled oscillators under varyi
   - matplotlib
   - scipy
 
-To install the necessary libraries, run:
-pip install -r requirements.txt
-
 ## Running the Project
+To run the project locally, follow these steps:
+
 Clone the repository to your local machine:
-git clone https://github.com/yourusername/projectname.git
+`git clone https://github.com/yourusername/projectname.git`
 
 Navigate to the project directory:
-cd projectname
+`cd projectname`
 
 Install the required dependencies:
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 Run the script:
-python my_script.py
+`python my_script.py`
+
+The script will generate graphical outputs showing the behavior of the coupled oscillators over time.
+
+## Functionality
+The program defines the system of coupled harmonic oscillators using the function f_nosc. This function calculates the acceleration of each oscillator based on the positions and velocities of its neighbors.
+A list of oscillators, where each oscillator interacts with its neighboring ones via a spring force.
+The differential equations are numerically solved using scipy.integrate.solve_ivp, which integrates the equations of motion for the oscillators over a specified time range.
+
+## Key Parameters
+n: Number of oscillators in the system. The system can simulate various numbers of oscillators, such as 2, 4, 8, 12, etc.
+k: Spring constant that determines the strength of the interaction between neighboring oscillators. In the code, it is set to 1.
+m: Mass of each oscillator. This is also set to 1 in the code.
+fixed_end: A boolean parameter indicating the boundary condition:
+True means the ends of the chain are fixed, i.e., the first and last oscillators do not move.
+False means the ends are free, i.e., all oscillators can move. This parameter is defined in the function call and can be changed to adjust the boundary condition.
+
+## Initial Conditions
+The initial state of the system is set by the function yStart(n):
+
+Positions: All oscillators start at rest (position 0), except for the last oscillator, which is displaced by 0.3 to initiate the motion. Similarly, if desired, the positions of other oscillators can be set individually, just like the first and last oscillators.
+Velocities: All oscillators start with zero velocity (stationary). If needed, the velocities of individual oscillators can also be set, similar to how positions are defined for the first and last oscillators.
 
 ## Analysis of Dynamics in Oscillator Systems
 
@@ -56,17 +76,20 @@ As the spring constant increases, the springs become stiffer and restrict moveme
 
 Stiff springs transmit forces between masses more quickly. At a high spring constant, the motion of one mass is immediately transferred to the others, reducing the phase difference between them. This makes the masses more dependent on each other. This behavior arises because the energy in the springs is transmitted in the form of waves, and the speed of these waves depends on the medium. In this case, the spring can be considered as the medium. When relating the wave speed to the dynamics of motion on the spring, the fundamental formula used to determine the wave speed is as follows:
 
-Wave speed: $v = \sqrt{\frac{T}{\mu}}$
+**Wave speed**:  
+$$ v = \sqrt{\frac{T}{\mu}} $$
+
 Where:
-- $v$: Wave speed,
-- $T$: Spring tension,
-- $\mu$: Mass density (mass / length).
+- \( v \): Wave speed,
+- \( T \): Spring tension,
+- \( \mu \): Mass density (mass per unit length).
 
 Additionally, mass density can be calculated as:
 $$ \mu = \frac{m}{L} $$
-Where
-- $m$:  Mass of the spring,
-- $L$: Length of the spring.
+
+Where:
+- \( m \): Mass of the spring,
+- \( L \): Length of the spring.
 
 These formulas are used to understand the wave speed and the dynamics of the system.
 
