@@ -29,7 +29,7 @@ Install the required dependencies:
 `pip install numpy matplotlib scipy `
 
 Run the script:
-`python my_script.py`
+`python oscillator_dynamics.py`
 
 The script will generate graphical outputs showing the behavior of the coupled oscillators over time.
 
