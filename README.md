@@ -20,13 +20,13 @@ This project models and analyzes the dynamics of coupled oscillators under varyi
 To run the project locally, follow these steps:
 
 Clone the repository to your local machine:
-`git clone https://github.com/yourusername/projectname.git`
+`git clone https://github.com/BatuhanKaganErhan/Investigating-the-Dynamics-of-Coupled-Oscillators.git`
 
 Navigate to the project directory:
-`cd projectname`
+`cd Investigating-the-Dynamics-of-Coupled-Oscillators`
 
 Install the required dependencies:
-`pip install -r requirements.txt`
+`pip install numpy matplotlib scipy `
 
 Run the script:
 `python my_script.py`
