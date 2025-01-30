@@ -10,7 +10,7 @@ This project models and analyzes the dynamics of coupled oscillators under varyi
 - Provides detailed comparison of normal modes and wave dynamics for different oscillator configurations.
 
 ## Requirements
-- Python 3.7 or higher
+- Python 3.x or higher
 - Required libraries:
   - numpy
   - matplotlib
